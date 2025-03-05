@@ -39,6 +39,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LoginForm from './components/LoginForm';
 import UrbanRegistrationForm from './components/UrbanRegistrationForm';
 import ChatbotPage from './components/ChatbotPage';
+import AddInformation from './components/AddInformation';
+
 function App() {
   return (
     <BrowserRouter>
@@ -46,6 +48,7 @@ function App() {
         <Route path="/" element={<LoginForm />} />
         <Route path="/register" element={<UrbanRegistrationForm />} />
         <Route path="/main" element={<ChatbotPage />} />
+        <Route path="/addInfo" element={<AddInformation />} />
       </Routes>
     </BrowserRouter>
   );
